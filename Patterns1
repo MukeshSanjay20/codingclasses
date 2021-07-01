@@ -1,0 +1,19 @@
+import java.util.*;
+class patterns1
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.print("N=");
+int N=sc.nextInt();
+int i,j;
+for(i=1;i<=N;i++)
+{
+for(j=i;j<=N;j++)
+{
+System.out.print("*");
+}
+System.out.println();
+}
+}
+}

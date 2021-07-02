@@ -1,0 +1,29 @@
+import java.util.*;
+class biggestof16
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n1=sc.nextInt();
+int n2=sc.nextInt();
+int n3=sc.nextInt();
+int n4=sc.nextInt();
+int n5=sc.nextInt();
+int n6=sc.nextInt();
+int n7=sc.nextInt();
+int n8=sc.nextInt();
+int n9=sc.nextInt();
+int n10=sc.nextInt();
+int n11=sc.nextInt();
+int n12=sc.nextInt();
+int n13=sc.nextInt();
+int n14=sc.nextInt();
+int n15=sc.nextInt();
+int n16=sc.nextInt();
+int b1=(int)Math.max(Math.max(n1,n2),Math.max(n3,n4));
+int b2=(int)Math.max(Math.max(n5,n6),Math.max(n7,n8));
+int b3=(int)Math.max(Math.max(n9,n10),Math.max(n11,n12));
+int b4=(int)Math.max(Math.max(n13,n14),Math.max(n15,n16));
+System.out.print("Biggest is:"+Math.max(Math.max(b1,b2),Math.max(b3,b4)));
+}
+}

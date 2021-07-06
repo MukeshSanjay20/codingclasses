@@ -1,0 +1,17 @@
+https://practice.geeksforgeeks.org/viewSol.php?subId=8e80ff7207f7989bbf7e35faed1fd6e7&pid=703468&user=chmukeshsanjay
+class Complete{
+    
+   
+    // Function for finding maximum and value pair
+    public static int multiply (int arr[], int n) {
+        int sum1=0;
+        int sum2=0;
+        for(int i=0;i<n/2;i++)
+        sum1=sum1+arr[i];
+        for(int i=n/2;i<n;i++)
+        sum2=sum2+arr[i];
+        return sum1*sum2;
+    }
+    
+    
+}

@@ -1,4 +1,4 @@
-https://practice.geeksforgeeks.org/problems/find-minimum-and-maximum-element-in-an-array4428/1
+https://practice.geeksforgeeks.org/viewSol.php?subId=82cac2afe6f65ce67f5a46fd48b4c61a&pid=703457&user=chmukeshsanjay
 class Compute 
 {
     static pair getMinMax(long a[], long n)  

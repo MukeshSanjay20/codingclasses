@@ -30,6 +30,7 @@ key=arr[i];
 if(x.get(key)>1)
 y.put(key,x.get(key));
 }
-System.out.println(y);
+for (Map.Entry<Integer,Integer> entry : y.entrySet())
+System.out.println( entry.getKey() +"->" + entry.getValue());       
 }
 }

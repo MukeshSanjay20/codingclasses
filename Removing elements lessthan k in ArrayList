@@ -1,0 +1,25 @@
+import java.util.*;
+class remove
+{
+public static void main(String args[])
+{
+ArrayList<Integer>x=new ArrayList<Integer>();
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter n value: ");
+int n=sc.nextInt();
+System.out.print("Enter values into arraylist: ");
+for(int i=0;i<n;i++)
+{
+x.add(sc.nextInt());
+}
+System.out.print("Enter k value: ");
+int k=sc.nextInt();
+Iterator<Integer> y=x.iterator();
+while(y.hasNext())
+{
+if(y.next()<=k)
+y.remove();
+}
+System.out.println(x);
+}
+}

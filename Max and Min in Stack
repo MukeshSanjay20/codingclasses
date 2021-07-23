@@ -1,0 +1,20 @@
+import java.util.*;
+class stackminmax
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter n value");
+int n=sc.nextInt();
+Stack<Integer> st = new Stack<Integer>();
+System.out.println("enter values");
+for(int i=0;i<n;i++)
+{
+st.push(sc.nextInt());
+}
+int max=Collections.max(st);
+System.out.println("max ="+max);
+int min=Collections.min(st);
+System.out.print("min ="+min);
+}
+}

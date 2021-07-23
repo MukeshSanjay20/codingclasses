@@ -3,7 +3,7 @@ class mapcount
 {
 public static void main(String args[])
 { 
-LinkedHashMap<Integer,Integer> x=new LinkedHashMap<Integer,Integer>();
+HashMap<Integer,Integer> x=new HashMap<Integer,Integer>();
 Scanner sc=new Scanner(System.in);
 System.out.print("Enter array Size: "); 
 int n=sc.nextInt();

@@ -1,0 +1,49 @@
+import java.util.*;
+class commonprimefactor
+{
+public static void main(String args[])
+{
+HashSet<Integer> s1=new HashSet<Integer>();
+HashSet<Integer> s2=new HashSet<Integer>();
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+while(n%2==0)
+{
+s1.add(2);
+n=n/2;
+}
+for(int i=3;i<=Math.sqrt(n);i+=2)
+{
+while(n%i==0)
+{
+s1.add(i);
+n=n/i;
+}
+}
+if(n>2)
+s1.add(n);
+int q=sc.nextInt();
+while(q%2==0)
+{
+s2.add(2);
+q=q/2;
+}
+for(int i=3;i<=Math.sqrt(q);i+=2)
+{
+while(q%i==0)
+{
+s2.add(i);
+q=q/i;
+}
+}
+if(q>2)
+s2.add(q);
+s1.retainAll(s2);
+int sum=0;
+for(Integer i:s1)
+{
+sum=sum+i;
+}
+System.out.println(sum);
+}
+}

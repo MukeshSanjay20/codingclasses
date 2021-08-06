@@ -1,0 +1,32 @@
+import java.util.*;
+public class leetcode2
+{
+public static int maxSubArray(int[] nums) 
+{
+int max = Integer.MIN_VALUE;
+int prefix=0;
+for(int i=0;i<nums.length;i++)
+{
+prefix+=nums[i];
+if(prefix>max)
+max=prefix;
+if(prefix<0)
+prefix=0;
+}
+return max; 
+}
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter array size: ");
+int size=sc.nextInt();
+System.out.print("Enter array elements: ");
+int[] nums=new int[size];
+for(int i=0;i<size;i++)
+{
+nums[i]=sc.nextInt();
+}
+int result=maxSubArray(nums);
+System.out.println(result);
+}
+}

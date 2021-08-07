@@ -1,0 +1,30 @@
+import java.util.*;
+public class Solution8 
+{
+public static int singleNumber(int[] nums) 
+{
+int n=nums.length;
+int res=0;
+int res1=0;
+for(int i=0;i<n;i++)
+{
+res=~res1&(res^nums[i]);
+res1=~res&(res1^nums[i]);
+}
+return res;
+}
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter array size: ");
+int size=sc.nextInt();
+System.out.print("Enter array elements: ");
+int[] nums=new int[size];
+for(int i=0;i<size;i++)
+{
+nums[i]=sc.nextInt();
+}
+int result=singleNumber(nums);
+System.out.println(result);
+}
+}

@@ -1,0 +1,27 @@
+import java.util.*;
+public class Binary
+{  
+public static int reverseBits(int n) 
+{
+long result = 0;
+String r = "";
+int count = 0;
+while(count<=31)
+{
+int last = n&1;
+r += last;
+n = n>>1;
+count++;
+}
+result= Long.parseLong(r, 2);
+return (int)result;
+}
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+String str=sc.nextLine();
+int n=Integer.parseInt(str,2);  
+int result=reverseBits(n);
+System.out.println(result);
+} 
+}
